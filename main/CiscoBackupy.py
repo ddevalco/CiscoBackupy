@@ -36,7 +36,7 @@ def export_show_run(ip):
     time.sleep(1)
     output = remote_conn.recv(50000)
     print "closing connection"
-    remote_conn.send("terminal length 0\n")
+    remote_conn.send("terminal length 25\n")
     remote_conn.close()
     return output
 
